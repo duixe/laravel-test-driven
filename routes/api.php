@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\TodoListController;
+use App\Http\Controllers\TaskListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('todo-list', [TodoListController::class, 'index'])->name('todo-list.store');
+Route::get('task-list', [TaskListController::class, 'index'])->name('task-list.store');
