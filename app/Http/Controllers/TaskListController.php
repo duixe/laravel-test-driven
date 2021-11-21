@@ -14,4 +14,10 @@ class TaskListController extends Controller
         'list' => $taskList
       ]);
     }
+
+    public function show(Task $task)
+    {
+      // $task = Task::findOrFail($id);
+      return response($task);
+    }
 }

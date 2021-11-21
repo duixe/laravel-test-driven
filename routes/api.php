@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('task-list', [TaskListController::class, 'index'])->name('task-list.store');
+Route::get('task-list/{task}', [TaskListController::class, 'show'])->name('task-list.show');
